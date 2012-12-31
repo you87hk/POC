@@ -1,0 +1,2 @@
+PCKRJ09347        RJ09347        CF-HK     NITE1P0100 5P10               0       9                  001 
+PCKRJ09347        RJ09347        CF-HK     NITE1P0200 5P10               0       19                 001 

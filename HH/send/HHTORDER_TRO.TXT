@@ -1,0 +1,3 @@
+TROTR08274        RJ03001        CF-HK     ABB ACB YO 220V A/C           0       1                  0   
+TROTR08274        RJ03001        CF-HK     ARRESTER HCC-1040-65-4-3P+N   0       20                 0   
+TROTR08274        RJ03001        CF-HK     BROYCE BIUCS                  0       1                  0   

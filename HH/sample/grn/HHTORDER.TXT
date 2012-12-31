@@ -1,0 +1,4 @@
+GRNPO081101                                NITE1P0100 5P10               0       5                      
+GRNPO081101                                NITE1P0200 5P10               0       2                      
+GRNPO081100       RJ03004                  QAEM0300                      0       3                  0   
+GRNPO081100       RJ03004                  QAEM3000                      0       53                 0   

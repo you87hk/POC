@@ -1,0 +1,1 @@
+IT3CW32.EXE +RC +B115200 +P1 +V +E +L0 C:\HH\Receive\(FILE)

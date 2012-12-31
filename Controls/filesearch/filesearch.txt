@@ -1,0 +1,25 @@
+File Search
+-----------
+Allows you to search for files in any drive or folder e.g.
+
+FS1.SearchFile list1, "x:\windows\system", "*.*", label1
+FS1.SearchFile list1, "c:\", "*.txt;*.doc", label1
+
+- list1 is the list where the files will be returned
+- c:\ and x:\windows\system is the folder or drive that will be searched
+- *.* and *.txt;*.doc is the filter you can also specify a file e.g. letter.txt
+- label1 is the label whose caption property will be changed to show what folder
+  is currently being searched.  You could also use the form or any control that
+  has a caption property
+
+It is recommended that you disable the form before the search then enable it
+because the search cannot be interupted e.g.
+
+Me.Enabled = False
+FS1.SearchFile list1, "c:\docs", "letter.doc", label1
+Me.Enabled = True
+
+------------
+Martin Allen
+
+martin@martin2k.co.uk

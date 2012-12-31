@@ -1,0 +1,1 @@
+IT3CW32.EXE +B115200 +P1 D:\Work\ChungFai\HH\Send\HHTORDER.TXT +E +V

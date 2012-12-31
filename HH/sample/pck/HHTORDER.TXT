@@ -1,0 +1,4 @@
+PCKRJ08311        RJ08311        CF-HK     NITE1P0100 5P10               0       1                  001 
+PCKRJ08311        RJ08311        CF-HK     NITE1P0200 5P10               0       2                  001 
+PCKRJ08311        RJ08311        CF-HK     QAEM0300                      0       3                  002 
+PCKRJ08311        RJ08311        CF-HK     QAEM3000                      0       4                  002 

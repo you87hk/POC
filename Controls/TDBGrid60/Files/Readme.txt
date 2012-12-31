@@ -1,0 +1,170 @@
+APEX True DBGrid Pro 6.0                                    
+Build 6.0.0204 ("The Plain of Auvers")         
+October 30, 1998
+----------------------------------------------------------------
+
+
+Thank you for purchasing True DBGrid Pro 6.0!  We hope that you find it to be a valuable tool for developing powerful and robust database applications for the Microsoft Visual Studio family of development environments.
+
+
+========
+Contents
+========
+
+(1)  APEX Web Site
+(2)  Explanation of ICursor and OLE DB
+(3)  *** IMPORTANT: OLE DB Bug Information ***
+(4)  Samples and Tutorials
+(5)  Migration
+(6)  Distribution Requirements
+
+
+
+================================================
+(1)  APEX Web Site
+================================================
+
+The APEX Web site at www.apexsc.com provides a wealth of information and software downloads for True DBGrid Pro 6.0 users:
+
+* Latest news and information about APEX products
+* Free product updates, which provide you with bug fixes and new features
+* Free Sample programs which provide detailed illustrations of advanced concepts
+* Answers to frequently asked questions (FAQ's) about APEX products
+* Trial versions and demos for APEX products
+* Lists of APEX Resellers and ordering information 
+* Carl and Gary's Visual Basic Home Page, a comprehensive resource for Visual Basic developers.
+
+
+
+================================================
+(2)  Explanation of ICursor and OLE DB
+================================================
+
+There are two types of data binding formats currently available for data-bound controls and data controls, ICursor and OLE DB.  These two data binding formats are not compatible with each other.  Thus, you cannot bind an OLE DB data-bound control to an ICursor data control, or vice versa.  You must bind ICursor data-bound controls to ICursor data controls, and OLE DB data-bound controls to OLE DB data controls.  Most data-bound controls and data controls support only ICursor or OLE DB; usually not both.
+
+ICursor is supported by the Visual Basic 5.0 and 6.0 intrinsic data controls, as well as the Microsoft Remote Data Control.  All data-bound controls that shipped with Visual Basic 5.0 support ICursor, as do many that ship with Visual Basic 6.0.  
+
+OLE DB is a new data binding specification supported by the ADO Data Control (ADODC) that ships with Visual Basic 6.0.  Visual Basic 6.0 also ships with a number of OLE DB data-bound controls, such as the Microsoft DataGrid control and the Microsoft DataList controls.  OLE DB controls are generally marked with (OLEDB) in the Visual Basic 6.0 component gallery for your convenience.  (If a control is not labeled with (OLEDB), you can usually assume that it supports ICursor, and not OLE DB.)
+
+True DBGrid Pro 6.0 supports both ICursor and OLE DB data binding by supplying two OCX grid controls:
+
+The ICursor grid (TDBG6.OCX) supports binding to ICursor data controls, such as the VB5/VB6 intrinsic data controls and the Microsoft Remote Data Control (RDC).
+
+The OLE DB grid (TODG6.OCX) supports binding to OLE DB compliant data controls, such as the ADO Data Control (ADODC) that ships with VB6.
+
+The ICursor and OLE DB versions of True DBGrid Pro 6.0 support the same rich set of data presentation and user interface features, differing only in the types of data controls and data sources supported.  
+
+
+NOTE: Both the ICursor and OLE DB grids support ther same unbound data modes, although the unbound modes of the ICursor grid (TDBG6.OCX) are more efficient than those of the OLE DB grid (TODG6.OCX), which have not yet been fully optimized.
+
+
+
+================================================
+(3)  *** IMPORTANT: OLE DB Bug Information ***
+================================================
+
+A number of bugs were detected in the Microsoft OLE DB provider for ODBC when using server-side cursors (CursorLocation = adUseServer).  Using a server-side cursor with batch updates (LockType=adLockBatchOptimistic) has shown to be especially problematic.  
+
+Based on our findings, we STRONGLY recommend using client-side cursors (CursorLocation = adUseClient) instead of server-side cursors.  Batch updates will work properly with client-side cursors in True DBGrid Pro 6.0.
+
+IMPORTANT NOTE: When creating an ADO Recordset at run time through Visual Basic code, the CursorLocation property will default to adUseServer.  Thus you MUST specifically set CursorLocation to adUseClient, or you will encounter problems.
+
+
+
+================================================
+(4)  Samples and Tutorials
+================================================
+  
+About the Tutorials
+-------------------
+
+True DBGrid Pro 6.0 ships with several sets of tutorial and sample projects.  
+
+All Visual Basic 5.0 tutorials and samples use the ICursor grid (TDBG6.OCX).
+
+There are two sets of True DBGrid 6.0 tutorials and samples for Visual Basic 6.0, one for the ICursor grid (TDBG6.OCX), and one for the OLE DB grid (TODG6.OCX). 
+
+
+Running the HTML Tutorials
+--------------------------
+
+The HTML tutorials and samples were designed for Windows NT 4.0 systems with Windows NT 4.0 Service Pack 3 and Internet Explorer 4.0 installed.  For most of the tutorials and samples, you will need the Remote Data Services data control (RDS) installed on your system.  RDS is a component of Internet Information Server (IIS) 4.0, which is installed by the Microsoft Windows NT 4.0 Option Pack.  As of the time of this writing, you may download the Option Pack from the following URL:
+	
+http://www.microsoft.com/NTServer/all/downloads.asp
+
+To obtain IIS 4.0 for other operating systems, please contact Microsoft or visit their web site at:
+
+http://www.microsoft.com/
+
+
+Extra Sample Projects
+---------------------
+
+Also included with this product is a collection of extra unbound and storage mode projects compiled by the APEX support staff which have been found to be useful by our customers and beta testers.  These extra samples have been placed into the \Samples\Extra folder where you installed True DBGrid Pro 6.0.  These projects are not documented and not officially supported by APEX, although we will try to answer questions about them.
+
+Many of these extra sample projects are very valuable and useful.  Some show how to use the grid with ADO, DAO, and RDO in unbound mode, some show how to dump Recordset or Resultset data into an XArray or XArrayDB object, and others show miscellaneous features and tips.  Most of the sample projects in the \Samples\Extra folder contain a Readme.txt file that gives a small description of the sample.
+
+Enjoy!
+
+
+
+================================================
+(5)  Migration
+================================================
+
+A migration utility is provided for you to migrate projects created with DBGrid, True DBGrid 4.0, and True DBGrid Pro 5.0 ICursor grid controls to True DBGrid Pro 6.0 (ICursor) or True DBGrid Pro 6.0 (OLE DB).
+
+The migration utility can also be used to migrate a True DBGrid Pro 6.0 (ICursor) project to True DBGrid Pro 6.0 (OLE DB), and vice versa.  Note however that when migrating from an ICursor control to an OLE DB control (or vice versa) will *only* replace the grid for you and modify grid code.  The migration utility does not replace the data control or migrate any data access code for you, which you must do yourself. 
+
+Example:  If you migrate a True DBGrid Pro 5.0 project which uses the VB6 Data control to True DBGrid Pro 6.0 (OLE DB), the migration utility will change event declarations and TrueDBGrid50 to TrueOleDBGrid60 as appropriate, but the project will not work (the grid is now OLE DB, which is incompatible with the VB6 intrinsic (ICursor) data control.  You must then replace the VB6 Data control with an OLE DB data control (such as the ADO data control which ships with VB6) and replace all data control code in your project.
+
+
+
+================================================
+(6)  Distribution Requirements
+================================================
+
+
+The following listing contains all redistributable True DBGrid Pro 6.0 files provided by APEX:
+
+TDBG6.OCX  (APEX True DBGrid Pro 6.0 ICursor grid)
+TODG6.OCX  (APEX True DBGrid Pro 6.0 OLE DB grid)
+TODGUB6.DLL  (Unbound mode support DLL for use with TODG6.OCX)
+TDBGPP.DLL  (Printing and print preview support DLL)
+XARRAY32.OCX  (APEX XArray Object)
+XARRAYDB.OCX  (APEX XArrayDB Object)
+
+
+The guidelines below will list the necessary files which must be distributed with programs that use True DBGrid Pro 6.0.  (NOTE: The guidelines below do not list Visual Basic, OLE, or Database-related run time support files which may also be required for distributing your project.)
+
+
+If you are using the ICursor version of True DBGrid Pro 6.0:
+------------------------------------------------------------
+
+* You must ALWAYS distribute TDBG6.OCX.
+
+* If you are using XArray anywhere in your project (with or without the grid), you must distribute XARRAY32.OCX.
+
+* If you are using XArrayDB anywhere in your project (with or without the grid), you must distribute XARRAYDB.OCX.
+
+* If you are using the grid's printing or exporting features, you must distribute TDBGPP.DLL.
+
+
+If you are using the OLE DB version of True DBGrid Pro 6.0:
+------------------------------------------------------------
+
+* You must ALWAYS distribute TODG6.OCX.
+
+* If you are using any grids in your project where the DataMode is set to 1 (Unbound), 2 (Unbound Extended), 3 (Application), or 4 (Storage Mode), you must distribute TODGUB6.DLL.
+
+* If you are using XArray anywhere in your project (with or without the grid), you must distribute XARRAY32.OCX.
+
+* If you are using XArrayDB anywhere in your project (with or without the grid), you must distribute XARRAYDB.OCX.
+
+* If you are using the grid's printing or exporting features, you must distribute TDBGPP.DLL.
+
+
+
+----------------------------------------------------------------
+Thank you, 
+APEX Software Corporation

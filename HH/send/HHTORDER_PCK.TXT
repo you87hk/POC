@@ -1,0 +1,22 @@
+PCKRJ08339        RJ08339        CF-HK     DELIVERY                      0       2                  001 
+PCKRJ08339        RJ08339        CF-HK     MG32598                       0       2                  001 
+PCKRJ08339        RJ08339        CF-HK     MG32694                       0       4                  001 
+PCKRJ08339        RJ08339        CF-HK     MG42888-2L1K                  0       1                  001 
+PCKRJ08339        RJ08339        CF-HK     SITE INSTALLATION             0       4                  001 
+PCKRJ08339        RJ08339        CF-HK     2T JM70/1P                    0       2                  002 
+PCKRJ08339        RJ08339        CF-HK     CDG 11                        0       1                  002 
+PCKRJ08339        RJ08339        CF-HK     CDG 34                        0       2                  002 
+PCKRJ08339        RJ08339        CF-HK     DELIVERY                      0       1                  002 
+PCKRJ08339        RJ08339        CF-HK     MG32694                       0       10                 002 
+PCKRJ08339        RJ08339        CF-HK     NIT2P2250                     0       7                  002 
+PCKRJ08339        RJ08339        CF-HK     NITM2500                      0       3                  002 
+PCKRJ08339        RJ08339        CF-HK     SATEC P130EH                  0       1                  002 
+PCKRJ08339        RJ08339        CF-HK     SITE INSTALLATION             0       1                  002 
+PCKRJ08339        RJ08339        CF-HK     運費                            0       2                  002 
+PCKRJ08339        RJ08339        CF-HK     CDG 11                        0       1                  003 
+PCKRJ08339        RJ08339        CF-HK     CDG 34                        0       1                  003 
+PCKRJ08339        RJ08339        CF-HK     DELIVERY 1                    0       3                  003 
+PCKRJ08339        RJ08339        CF-HK     NIT2P2250                     0       7                  003 
+PCKRJ08339        RJ08339        CF-HK     SATEC P130EH                  0       1                  003 
+PCKRJ08339        RJ08339        CF-HK     SITE INSTALLATION             0       1                  003 
+PCKRJ08339        RJ08339        CF-HK     運費                            0       1                  003 

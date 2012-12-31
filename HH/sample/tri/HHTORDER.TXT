@@ -1,0 +1,4 @@
+TRITR08279                       CF-HZ     NITE1P0100 5P10               0       1                      
+TRITR08279                       CF-HZ     NITE1P0200 5P10               0       2                      
+TRITR08278        RJ08311        CF-HZ     QAEM0300                      0       1                  0   
+TRITR08278        RJ08311        CF-HZ     QAEM3000                      0       2                  0   

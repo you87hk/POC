@@ -1,0 +1,4 @@
+TROTR08279                       CF-HK     NITE1P0200 5P10               0       2                      
+TROTR08279                       CF-HK     NITE1P0100 5P10               0       1                      
+TROTR08278        RJ08311        CF-HK     QAEM0300                      0       1                  0   
+TROTR08278        RJ08311        CF-HK     QAEM3000                      0       2                  0   
